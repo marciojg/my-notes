@@ -1,0 +1,3 @@
+- Criar as anotações
+- Criar a pasta de projetos de teste
+- Criar uma pasta de projeto de curso. para unir as anotações com um texto para criar um curso na udemy
