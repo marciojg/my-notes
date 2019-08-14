@@ -1,4 +1,3 @@
-
 # Ionic-4
 
 <!-- TOC -->
@@ -16,8 +15,10 @@
 
 ## O que é
   Ionic, antes de qualquer coisa, é um [Framework](https://pt.wikipedia.org/wiki/Framework). Uma analogia que sempre faço é que ele é o mesmo que o já famoso [Bootstrap](https://getbootstrap.com/).
-	Uma definição oficial é que ele é um kit de ferramentas de interface do usuário (UI) de código aberto para a criação de aplicativos móveis e de desktop de alto desempenho e de alta qualidade, usando HTML, CSS e JavaScript. Nesta versão possui integração oficial com o Framework Angular, e suporte com Vue e React estão em desenvolvimento.
-	Um conceito importante é que ele é limpo, bonito, simples focado no usuário (funcional) e principalmente adota o conceito "Write once, run anywhere. (Escreva uma vez e rode em qualquer lugar)", visto que as aplicações criadas usando o Ionic são possíveis de serem rodas em IOS, Android, Web, Windows Phone (se ainda existir rs). Portanto, o adjetivo principal, ele é multi-plataforma.
+
+Uma definição oficial é que ele é um kit de ferramentas de interface do usuário (UI) de código aberto para a criação de aplicativos móveis e de desktop de alto desempenho e de alta qualidade, usando HTML, CSS e JavaScript. Nesta versão possui integração oficial com o Framework Angular, e suporte com Vue e React estão em desenvolvimento.
+
+Um conceito importante é que ele é limpo, bonito, simples focado no usuário (funcional) e principalmente adota o conceito "Write once, run anywhere. (Escreva uma vez e rode em qualquer lugar)", visto que as aplicações criadas usando o Ionic são possíveis de serem rodas em IOS, Android, Web, Windows Phone (se ainda existir rs). Portanto, o adjetivo principal, ele é multi-plataforma.
 
 ## O que não é
 - Não é uma linguagem de programação
