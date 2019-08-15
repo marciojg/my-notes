@@ -42,7 +42,7 @@ Problema:
   ```
   segue a vida
   ```  
-
+https://gist.github.com/marcioJesus/04d6537bebbbdb25bd860e2e565c2c8d
 
 -------------------------------------------------------------------------
 # possivel solução para os casos de validar duplicidade
