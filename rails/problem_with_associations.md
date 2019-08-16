@@ -44,6 +44,27 @@ Problema:
   ```  
 https://gist.github.com/marcioJesus/04d6537bebbbdb25bd860e2e565c2c8d
 
+
+  # PAREI TENTANDO CIAR ESSE META METODO pq vou mandar um array de caras para validar e preicarei sobrescrever o metodo
+  # associacao= de todos eles
+  # https://www.toptal.com/ruby/ruby-metaprogramming-cooler-than-it-sounds
+  https://blog.eq8.eu/til/metaprogramming-ruby-examples.html
+
+
+- criei o concern
+- para usa-lo deve incluilo na classe 
+- e colocar o metodo: validate_presence_of(*associations) passando as associoes que quer que valide
+- o que ele faz?
+ - recebe essa lista de associoes
+ - cria um hash de nome (associations_for_be_validated que é um atributo virtual) usando o simbolo que ele recebe e coloca um valor falso em todos eles
+ - depois disso, varre esse array CRIANDO UM METODO NA INSTANCIA DA CLASSE ATUAL ex. "associacao=(valor)"
+ - isso é feito para sobrescrever o mesmo metodo que ja exite, criado pelo activerecord para as collections=associacoes
+ - onde dentro de cada metodo ele olha se o valor recebido é um array vazio ou com tudo em branco ex [''].
+ - se for, nao faz o que pediu de troca o valor da chave do array associations_for_be_validated (lembra dele?) para true.
+ - e porque?
+ - por temos o metodo validador, que varre o mesmo array alterado durante o tempo vendo quem tem essa chave true e coloca um erro
+ - no objeto(instancia da classe que estamos usando o concern =) ) que esta sendo validado. 
+
 -------------------------------------------------------------------------
 # possivel solução para os casos de validar duplicidade
 # Use the distinct method to keep the collection free of duplicates. This is mostly useful together with the :through option.
