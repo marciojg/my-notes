@@ -64,6 +64,8 @@ https://gist.github.com/marcioJesus/04d6537bebbbdb25bd860e2e565c2c8d
  - e porque?
  - por temos o metodo validador, que varre o mesmo array alterado durante o tempo vendo quem tem essa chave true e coloca um erro
  - no objeto(instancia da classe que estamos usando o concern =) ) que esta sendo validado. 
+ 
+ https://github.com/rails/rails/blob/v5.2.3/activerecord/lib/active_record/associations/collection_association.rb
 
 -------------------------------------------------------------------------
 # possivel solução para os casos de validar duplicidade
