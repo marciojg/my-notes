@@ -4,38 +4,12 @@ Esta árvore é composta por termos em geral da área de Desenvolvimento de Soft
 
 <!-- /TOC -->
 
-- [OOP](#OOP---Object-oriented-programming---Programação-Orientada-a-Objetos)
-  - [Classe](#Classe)
-  - [Herança](#Herança)
-  - [Polimorfismo](#Polimorfismo)
-  - [Encapsulamento](#Encapsulamento)
-
 - [DDD - Domain-Driver Design - Projeto Orientado a Domínio](#DDD---Domain-Driver-Design---Projeto-Orientado-a-Domínio)
   - [Domain Expert](#Domain-Expert)
   - [Linguagem ubíqua](#Linguagem-ubíqua)
   - [Modelo](#Modelo)
 
 <!-- /TOC -->
-
-- # OOP - Object-oriented programming - Programação Orientada a Objetos
-  ??????????????
-
-  - ## Classe
-    ????
-
-  - ## Herança
-    ????
-
-  - ## Polimorfismo
-    ????
-
-  - ## Encapsulamento
-    ????
-
-  ## Referências
-  ?????
-
-___________
 
 - # DDD - Domain-Driver Design - Projeto Orientado a Domínio
   DDD é guiarmos a construção de sofware com base no conhecimento, na modelagem do negócio (atividades desempenhadas pelo usuário e a sua área de interesse), sem a preocupação imediata de SGBD, relacionamento entre entidades e etc, ou seja, sem qualquer apelo por tecnologia, isso tudo vem depois. 
@@ -87,9 +61,16 @@ ___________
 ___________
 
 
-
-> **Próximos termos**
-> - Business Agility
->   - VUCA
->   - APM (Confiança)
-> - SOLID
+```
+**Próximos termos**
+- Business Agility
+  - VUCA
+  - APM (Confiança)
+- SOLID
+- # OOP - Object-oriented programming - Programação Orientada a Objetos
+  - ## Classe
+  - ## Herança
+  - ## Polimorfismo
+  - ## Encapsulamento
+  ## Referências
+```
