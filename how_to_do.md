@@ -152,3 +152,26 @@ firewall-cmd --zone=public --add-port=3000-3100/tcp --permanent
 firewall-cmd --reload
 systemctl restart firewalld
 ```
+### -----------------------------------------------------------------------------------------------------
+### Verificar se o shell foi executado como sudo
+```bash
+if [ "$(id -u)" -ne 0 ]; then
+  echo "Error - You need to execute this script as root/sudo"
+  exit 1
+fi
+```
+### -----------------------------------------------------------------------------------------------------
+### Verificar se o shell foi chamado na mesma pasta onde ele se encontra
+```bash
+if [ "$(dirname $0)" != "." ]; then
+  echo ": Error - You need to execute this command at same folder where it exists. Please, cd into the folder"
+  exit 1
+fi
+```
+### -----------------------------------------------------------------------------------------------------
+### Imprimir data e hora no echo
+```bash
+echo "$(date)"
+echo $(date)
+echo "EXIBIR DATA E HORA ATUAL = $(date)"
+```
