@@ -35,4 +35,22 @@ class DebitoContaCorrente < DebitoConta
     'Debito feito com sucesso'
   end
 end
+
+# OU MELHOR
+
+class DebitoConta
+  self.abstract_class = true
+
+  def debitar(valor, conta)
+    raise 'Este método precisa ser sobrescrito'
+  end
+end
+
+class DebitoContaCorrente < DebitoConta
+  def initialize;end
+
+  def debitar(valor, conta)
+    'Debito feito com sucesso'
+  end
+end
 ```
