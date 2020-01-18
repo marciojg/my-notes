@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  reconnect: true
+  pool: 5
+  encoding: utf8
+  database: name_of_database
+  host: database
+  port: 5432
+  user: postgres
+  password: postgres
+
+  # pool: <%= Rails.application.credentials.database_pool %>
+  # encoding: <%= Rails.application.credentials.database_encoding %>
+  # database: <%= Rails.application.credentials.database_name %>
+  # host: <%= Rails.application.credentials.database_host %>
+  # port: <%= Rails.application.credentials.database_port %>
+  # user: <%= Rails.application.credentials.database_user %>
+  # password: <%= Rails.application.credentials.database_password %>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
