@@ -182,3 +182,27 @@ $ cd /path/to/some/where
 $ du -hsx * | sort -rh | head -10
 $ du -hsx -- * | sort -rh | head -10
 ```
+
+### -----------------------------------------------------------------------------------------------------
+### Subir apps Angular com Ionic
+```bash
+sudo docker container run --rm -it -v $(pwd):/srv -w /srv -p 8100:8100 -p 35729:35729 -p 53703:53703 node:latest /bin/bash 
+
+npm install -g ionic
+ionic serve
+
+
+ionic-app-scripts serve --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser
+
+
+# subir marciojg.github.io
+sudo docker run --rm -it -v $(pwd):/usr/src/marciojg -w /usr/src/marciojg -p 4000:4000 ruby:latest /bin/bash
+
+# @Subir bible
+sudo docker container run --rm -it -v $(pwd):/srv -w /srv --net host -p 8100:8100 -p 35729:35729 -p 53703:53703 node:10 /bin/bash 
+
+remover linha do xml e do package do plugin-search
+sudo npm install -g ionic
+sudo npm install
+sudo ionic serve
+```
