@@ -175,3 +175,10 @@ echo "$(date)"
 echo $(date)
 echo "EXIBIR DATA E HORA ATUAL = $(date)"
 ```
+### -----------------------------------------------------------------------------------------------------
+### Descobrir tamanho das pastas linux
+```bash
+$ cd /path/to/some/where
+$ du -hsx * | sort -rh | head -10
+$ du -hsx -- * | sort -rh | head -10
+```
