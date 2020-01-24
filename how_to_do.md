@@ -206,3 +206,31 @@ sudo npm install -g ionic
 sudo npm install
 sudo ionic serve
 ```
+
+### -----------------------------------------------------------------------------------------------------
+### Comandos Básicos Unix
+```
+Cat = carrega conteúdo do arquivo
+tail = carrega conteúdo do arquivo
+tail -10 = carrega as últimas dez linhas do arquivo
+tail -f = se pendura ao arquivo, mostrando as últimas coisas que estão sendo escritas nele
+more = carrega do conteúdo do arquivoou de comandos paginado 
+less = carrega o conteúdo do arquivo ou comando paginado e com os comandos vi
+Cat arquivo.txt ou more arquivo.txt 
+Ps aux | more ( divide por tela mas carrega em memória)
+Ps aux | less (divide a tela mas carrega em stream, além de mostrar com comando vi)
+Comandos vi -------
+J e k = para cima e para baixo no arquivo (10j desce dez linhas)
+gg = para o topo do arquivo
+G = para o fim do arquivo
+/blabla = procura este texto
+n = pula para o próxima palavra encontrada
+q = sair
+Comandos vi -------------
+O "|" pipe = permite juntar ou concatenar o stdoutput de um comando com o stdinput de outro ex
+ps aux | grep bash = exibe processos rodando que possuam a palavra bash Como expressão regular
+History = histórico de comandos
+Crt + R = pesquisa comando no histórico
+ASDF = gerenciador de versão universal (rvm + npm etc)
+which = mostra de onde vem o comando (ex which echo retorna /bin/echo)
+```
