@@ -233,4 +233,6 @@ History = histórico de comandos
 Crt + R = pesquisa comando no histórico
 ASDF = gerenciador de versão universal (rvm + npm etc)
 which = mostra de onde vem o comando (ex which echo retorna /bin/echo)
+nmtui = trocar DNS
 ```
+
