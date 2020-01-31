@@ -25,3 +25,7 @@ end
 # metodo2
 # => nil
 # ```
+
+
+referencia:
+https://www.youtube.com/watch?v=_LGfJHrl1Fo
