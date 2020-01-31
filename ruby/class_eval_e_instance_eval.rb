@@ -95,3 +95,7 @@ end
 # sou privado
 # => nil
 #  ```
+
+
+referencia:
+https://www.youtube.com/watch?v=_LGfJHrl1Fo
