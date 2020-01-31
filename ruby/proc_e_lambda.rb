@@ -33,3 +33,7 @@ end
 
 # => nil
 # ``` 
+
+
+referencia:
+https://www.youtube.com/watch?v=MzatZBqmlzY
