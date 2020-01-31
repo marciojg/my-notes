@@ -1,0 +1,64 @@
+# Hook de const_missing e method_missing
+# const_missing trata constantes como classe, modulo, ou contante ClassName:CONTANTE que não existem quando são chamados, evitando assim o erro de runtime
+# Pode ser mais comum quando criamos classes dinamicamente atraves do eval("class Teste end") por exemplo.
+# method_missing trata os métodos que não existem ao serem chamados também evitando erro de runtime
+
+
+##### Executando antes
+
+#    Teste
+# uninitialized constant Teste
+# (repl):1:in `<main>'
+   
+class Module
+  def const_missing(klass)
+    puts "Classe não encontrada #{klass}"
+  end
+end
+
+# Executando depois
+#   Teste
+# Classe não encontrada Teste
+# => nil
+
+class Teste
+  def method_missing(name)
+    puts "Método de instancia não foi encontrado #{name}"
+  end
+
+  def self.method_missing(name)
+    puts "Método de classe não foi encontrado #{name}"
+  end
+
+  def self.const_missing(name)
+    puts "Não existe constante #{name} na classe #{self}"
+  end
+end
+
+#    Teste.metodo
+# Método de classe não foi encontrado metodo
+# => nil
+#    Teste.new.metodo
+# Método de instancia não foi encontrado metodo
+# => nil
+#    Teste::METODO
+# Não existe constante METODO na classe Teste
+# => nil
+
+# Exemplo legal de classe sendo criada a partir de arquivo
+
+class Module
+  def const_missing(name)
+    existe = File.exist?("database/#{name}.csv")
+    unless existe
+      puts "Classe #{name} não encontrada pq não tem nenhum arquivo csv em database"
+      return
+    end
+
+    const_set(name, Class.new)
+  end
+end
+
+#    ClasseCSV
+# Classe ClasseCSV não encontrada pq não tem nenhum arquivo csv em database
+# => nil
