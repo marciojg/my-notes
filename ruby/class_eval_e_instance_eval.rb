@@ -1,5 +1,5 @@
 # :class_eval = Escreve o arquivo de classe. Quando há uma nova instancia da classe o metodo que foi definido por ele existirá
-# :instance_eval = Escreve quem o chamou, sendo instancia ou a própria classe.
+# :instance_eval = Escreve quem o chamou, sendo instancia ou a própria classe. Além, disso o instance_eval abre os metodos e atributos da classe, inclusive os privados
 ```ruby
 class Teste
 end
@@ -64,3 +64,34 @@ end
 #    Teste.new.methods.grep(/metodo/)
 # => [:metodo2, :metodo6]
 # ```
+
+# Abrindo atributos/metodos privados da classe com instance_eval
+
+```ruby
+class Teste
+
+  private
+
+  attr_reader :name
+
+  def metodo_privado
+    puts 'sou privado'
+  end
+end
+```
+
+#  ```ruby
+#   teste = Teste.new
+# => #<Teste:0x000055a167cd0ab0>
+#    teste.name
+# private method `name' called for #<Teste:0x000055a167cd0ab0>
+# (repl):1:in `<main>'
+#    teste.metodo_privado
+# private method `metodo_privado' called for #<Teste:0x000055a167cd0ab0>
+# (repl):1:in `<main>'
+#    teste.instance_eval { name }
+# => nil
+#    teste.instance_eval { metodo_privado }
+# sou privado
+# => nil
+#  ```
