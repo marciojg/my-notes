@@ -1,3 +1,6 @@
+# https://andycroll.com/ruby/pluck-can-save-a-bunch-of-memory/
+# https://dev.to/johncip/understanding-rails-eager-loading-3n6j
+
 Revenue.joins(revenue_kind: :origin).select(*(Reports::RevenueReport::FIELDS.values | ['revenue_kind.name as rv_name', 'origin.name as or_name'])).search(revenue_kind_id_eq: 7, revenue_kind_origin_id_eq: 19).result.pluck(*(Reports::RevenueReport::FIELDS.values | [])) 
 5.126245408
 
