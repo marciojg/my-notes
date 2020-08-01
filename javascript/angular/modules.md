@@ -2,6 +2,7 @@
 ## O que eu entendi sobre módulos(imports, exports, declarations) em angular
 
 - Módulos são agregadores de contexto e escopo.
+- Um componente nao pode fazer parte do declaration de mais de um modulo. E nao posso importa-lo pois é um componente. A solucao para usar componentes compartilhados é transforma-lo em um moódulo
 
 - Usar módulos e submódulos, permite sabermos com clareza do que cada módulo precisa para funcionar.
   - **imports**
