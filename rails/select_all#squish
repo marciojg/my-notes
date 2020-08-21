@@ -1,0 +1,6 @@
+# Same SQL, with a call to #squish at the end.
+ActiveRecord::Base.connection.select_all <<-SQL.squish
+  SELECT *
+  FROM users
+  WHERE users.username = 'sikachu'
+SQL
