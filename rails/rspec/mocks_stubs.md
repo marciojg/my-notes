@@ -26,6 +26,8 @@ allow(instance).to receive(:save_as).and_return('teste.pdf')
 allow(dbl).to receive(:foo).with(1).and_return(1)
 ```
 
+Mais sobre double e stubs para add aqui no futuro: https://rspec.info/documentation/3.7/rspec-mocks/
+
 # PROXIMOS
 
 ```
