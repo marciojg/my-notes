@@ -29,9 +29,12 @@ git push
 # Trocar o autor de varios commits
 ```
 git rebase -i master
-# trocar todos a ação ds commits que quer trocar o autor de pick para edit
-a cada um usar:
-git commit --amend --author 'Marcio de Jesus <marciodejesusrj@gmail.com>'
-e depois, até acabar
+# OU git rebase -i ID-DO-COMMIT-ANTERIOR-AO-QUE-PRETENDE-MUDAR-O-AUTOR
+
+# para cada commit que queira mudar o autor, troque pick para edit
+# a cada um usar:
+git commit --amend --author 'Marcio de Jesus <marciodejesusrj@gmail.com>' --no-edit
+
+# Quando acabar use:
 git rebase --continue
 ```
