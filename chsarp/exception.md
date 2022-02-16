@@ -2,12 +2,16 @@
 
 ```csharp
 public void MetodoX() {
-  try (1/0) {
-    /**/
+  try {
+    MetodoY();
   }
   catch (Exception ex) {
     throw; // Com StackTrace
     throw ex; // Sem StackTrace
   }
+}
+
+public void MetodoY() {
+  1/0;
 }
 ```
