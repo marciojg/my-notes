@@ -1,3 +1,24 @@
+O using é um açúcar sintático para o código:
+Com o bloco using, a instanciação do objeto acontece em um bloco try e no bloco finally o método Dispose é invocado após a verificação de referência nula.
+
+```csharp
+RecursoDoSistema recurso = null;
+try
+{
+    recurso = new RecursoDoSistema();
+    recurso.Usar();
+}
+finally
+{
+    if(recurso != null)
+    {
+        recurso.Dispose();
+    }
+}
+```
+
+Mais detalhes
+
 ```csharp
 // A classe que lança a exeção no seu construtor e é usada no metodo using implementa a interface IDisposable para que o using possa funcionar de boas
 public class LeitorDeArquivo : IDisposable
