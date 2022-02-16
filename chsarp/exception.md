@@ -1,4 +1,6 @@
-# Quando lança o throw sem passar o objeto da exceção a StackTrace eh mantida
+### Quando lança o throw sem passar o objeto da exceção a StackTrace eh mantida
+
+O StackTrace na CLR começa quando executamos throw <objeto de exception>; até o manipulador da exceção.
 
 ```csharp
 public void MetodoX() {
