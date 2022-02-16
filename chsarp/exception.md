@@ -3,6 +3,7 @@
 ```csharp
 public void MetodoX() {
   try (1/0) {
+    /**/
   }
   catch (Exception ex) {
     throw; // Com StackTrace
