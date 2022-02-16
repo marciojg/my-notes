@@ -20,7 +20,7 @@ public void MetodoY() {
 
 Para manter o StackTrace e não expor informações sensíveis é possível ser feito com innerException
 
-```
+```csharp
 public void MetodoX() {
   try {
     MetodoY();
