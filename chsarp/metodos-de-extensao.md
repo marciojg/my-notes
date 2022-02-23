@@ -18,6 +18,30 @@ listaExemplo.AdicionarVarios(3, 4, 5);
 // 1, 2, 3, 4, 5
 ```
 
+Usando método de extensão genérico
+
+```cs
+public static class ListExtensoes 
+{
+  public static void AdicionarVarios<T>(this List<T> listaDeInteiros, params T[] itens)
+  {
+      foreach(T item in itens)
+      {
+          listaDeInteiros.Add(item);
+      }
+  }
+}
+
+var listaExemplo = new List<int> { 1, 2 };
+listaExemplo.AdicionarVarios(3, 4, 5);
+
+var listaExemplo = new List<string> { "Abc", "Oou" };
+listaExemplo.AdicionarVarios("Foo", "Bar");
+
+
+// "Abc", "Oou", "Foo", "Bar"
+```
+
 Não utilizando Usando método de extensão
 
 ```cs
