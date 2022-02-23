@@ -12,11 +12,15 @@ Por mais que variáveis de object aceitem valores de int, o mesmo não vale para
 ```cs
 public static object[] Concatenar(this object[] a, object[] b) { ... }
 
+// NÃO FUNCIONA
 int[] a = new int[] { 0, 1, 2 };
 int[] b = new int[] { 3, 4, 5 };
 
-// não funciona
 int[] resultado = a.Concatenar(b);
 
+// FUNCIONA
+object[] a = new object[] { 0, 1, 2 };
+object[] b = new object[] { 3, 4, 5 };
 
+object[] resultado = a.Concatenar(b);
 ```
