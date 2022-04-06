@@ -23,3 +23,11 @@ ls -lhat
 ```bash
 nmap <host>
 ```
+
+### Assistir algum evento, evitando rodar o comando várias vezes
+```bash
+watch '<qq comando>'
+
+ex: watch 'docker ps -a'
+    watch 'kubectl get pods' 
+```
