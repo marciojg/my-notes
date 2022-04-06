@@ -1,6 +1,6 @@
 ### descobrir porta usada
 ```bash
-lsof -i -P -n | grep 
+lsof -i -P -n | grep <PORT>
 ```
 
 ### derrubar serviço 
