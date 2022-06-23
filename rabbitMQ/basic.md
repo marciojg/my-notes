@@ -1,3 +1,5 @@
+video legal: https://www.youtube.com/watch?v=ghBKx-uMmzw&ab_channel=FullCycle
+
 ## rabbitmq (feito em erlang)
 
 pode configurar para as mensagens serem persistentes e as filas serem persistentes(duravel) ou não
