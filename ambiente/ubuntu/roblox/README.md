@@ -1,0 +1,3 @@
+- install vine https://www.winehq.org/
+- install grape juice https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package.html
+- install driver if has white page https://github.com/lutris/docs/blob/master/InstallingDrivers.md
