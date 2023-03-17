@@ -5,7 +5,7 @@ Minhas anotações de estudo e pré-artigo https://marciojg.github.io
 ## Inspiração
 https://github.com/khaosdoctor/my-notes
 
-## Lista de arquivos atual (necessita de organização)
+## Lista de arquivos (necessita de organização)
 ```
 ├── ambiente
 │   ├── nodejs-zica-ubuntu.md
